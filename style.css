@@ -1,0 +1,75 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-repeat: no-repeat;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    gap:4rem;
+}
+
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color:brown;
+    text-shadow: 2px 2px 2px olive;
+}
+
+#calculator{
+  border: solid brown 3px;
+  border-radius: 5px;
+  width: 20rem;
+  height: 27.5rem;
+  padding: 4px;
+}
+
+.display{
+    height: 5rem;
+    background-color:#FFFFFF;
+    margin-bottom: 6px;
+    border: solid brown 2px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.container{
+    color: brown;
+    font-size: 1.5rem;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:5px;
+}
+
+.buttons button{
+    background-color: #FFFFFF;
+    height: 4rem;
+    color: brown;
+    border: solid brown 3px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.buttons button:hover{
+    background-color: brown;
+    color:white;
+}
+
+.buttons button:first-child{
+    grid-column: 1/4;
+}
